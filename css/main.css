@@ -1,0 +1,223 @@
+body {
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: #012f34;
+	margin: 0;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.person__task,
+.post__task,
+.comment__task {
+	background-color: #014e56;
+	list-style-type: none;
+	opacity: 0.7;
+	width: 33%;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0;
+	padding: 10px;
+}
+
+ul::-webkit-scrollbar {
+	width: 5px;
+	height: 8px;
+	background-color: #000;
+}
+
+ul::-webkit-scrollbar-thumb {
+	background: #aaa;
+}
+
+.person__task li {
+	border-left: 3px solid #5d646f;
+	margin-bottom: 15px;
+	padding: 13px;
+}
+
+.person__task li:nth-child(10) {
+	margin-bottom: 0;
+}
+
+.person__task li:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 8px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.person__username {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #07941c;
+	margin-bottom: 7px;
+	padding: 5px 10px;
+}
+
+.person__box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.person__name {
+	font-size: 25px;
+	color: #79c8c7;
+}
+
+.person__number {
+	font-size: 50px;
+	color: #79c8c7;
+}
+
+.person__street,
+.person__suite,
+.person__city,
+.person__zipcode {
+	font-size: 17px;
+	color: #07941c;
+	margin-left: 3px;
+}
+
+.person__company-name,
+.person__catch-parse,
+.person__company-bs {
+	font-size: 18px;
+	color: #f67e7e;
+	margin: 0;
+}
+
+.person__company-bs {
+	margin-bottom: 10px;
+}
+
+.person__contact-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.person__phone-number {
+	position: relative;
+	display: block;
+	padding-left: 20px;
+	color: #79c8c7;
+}
+
+.person__phone-number::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../images/phone.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+}
+
+.person-website {
+	color: #0000ff;
+	margin-left: 3px;
+}
+
+.person__email {
+	position: relative;
+	display: block;
+	padding-left: 20px;
+	color: #0000ff;
+}
+
+.person__email::before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../images/gmail.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+}
+
+.person-website,
+.person__email,
+.person__geo:visited {
+	color: #47ab55;
+}
+
+.person-website,
+.person__email,
+.person__phone-number,
+.person__geo {
+	text-decoration: none;
+}
+
+.person__geo {
+	position: relative;
+}
+
+.person__geo::before {
+	position: absolute;
+	top: -5px;
+	left: -20px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../images/location.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+}
+
+.person__btn {
+	border: 1ps solid transparent;
+	float: right;
+}
+
+.post__item {
+	border: 1px solid #5d646f;
+	margin: 15px;
+	padding: 13px;
+}
+
+.post__item:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.post__title {
+	color: #79c8c7;
+	margin-bottom: 15px;
+}
+
+.post__text {
+	margin: 0;
+	color: #ffffff;
+}
+
+.comment__item {
+	border: 1px solid #5d646f;
+	margin: 15px;
+	padding: 13px;
+}
+
+.comment__item:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.comment__title {
+	margin-bottom: 10px;
+	color: #79c8c7;
+}
+
+.comment__text {
+	margin: 0;
+	color: #ffffff;
+}
